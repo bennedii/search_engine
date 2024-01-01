@@ -16,7 +16,7 @@
 
 ## Используются: 
 
-* [SpringBoot]([http://www.dropwizard.io/1.0.2/docs/](https://spring.io/projects/spring-boot/) - Использумый фреймворк для развертывания веб приложения
+* [SpringBoot](https://spring.io/projects/spring-boot/) - Использумый фреймворк для развертывания веб приложения
 * [Maven](https://maven.apache.org/) - Система управления зависимостями
 * [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
