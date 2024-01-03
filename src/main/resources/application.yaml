@@ -19,6 +19,4 @@ indexing-settings:
   sites:
     - url: https://nopaper.ru/
       name: Ноупеппер
-#    - url: http://www.playback.ru/
-#      name: Плейбек
-
+#  Выше пример добаления сайта в индексацию, все сайты по вашему желанию добавляем так же
