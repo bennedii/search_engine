@@ -6,11 +6,12 @@ import searchengine.config.Site;
 import searchengine.config.SitesList;
 import searchengine.controllers.ApiController;
 import searchengine.models.PageRepository;
+import searchengine.models.SITE_INDEX;
 import searchengine.models.SiteRepository;
 
 import java.util.HashMap;
 @Service
-public class StartIndexingServiceImpl implements StartIndexingService {
+public class StatusIndexingServiceImpl implements StatusIndexingService {
     @Autowired
     SiteRepository siteRepository;
     @Autowired
@@ -42,5 +43,20 @@ public class StartIndexingServiceImpl implements StartIndexingService {
         }
         result.put("result",true);
         return result;
+    }
+    @Override
+    public HashMap<String, Object> stopIndexing() {
+        HashMap<String,Object> answer = new HashMap<>();
+        Iterable<searchengine.models.Site> sites = siteRepository.findAll();
+        for (searchengine.models.Site site : sites){
+            if (site.getStatus() == SITE_INDEX.INDEXING){
+                ApiController.indexingIsGone = false;
+                answer.put("result", true);
+                return answer;
+            }
+        }
+        answer.put("result",false);
+        answer.put("error", "Индексация не запущена");
+        return answer;
     }
 }

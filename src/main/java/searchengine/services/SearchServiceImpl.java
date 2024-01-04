@@ -16,6 +16,11 @@ public class SearchServiceImpl implements SearchService {
     public HashMap<String, Object> search(LemmaRepository lemmaRepository, IndexRepository indexRepository, SiteRepository siteRepository, PageRepository pageRepository, String query, String site, int offset, int limit) {
         HashMap<String, Object> result = new HashMap<>();
         try {
+            if (query.isEmpty()){
+                result.put("result", false);
+                result.put("error", "Задан пустой поисковой запрос");
+                return result;
+            }
             List<String> Lemmalist = new ArrayList<>(LemmaFinder.getInstance().collectLemmas(query).keySet());
             List<String> lemmas;
             List<String> pagesPaths;
