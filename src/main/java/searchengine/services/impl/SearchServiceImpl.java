@@ -1,9 +1,10 @@
-package searchengine.services;
+package searchengine.services.impl;
 
 import org.jsoup.Jsoup;
 import org.springframework.stereotype.Service;
 import searchengine.dto.search.SearchData;
 import searchengine.models.*;
+import searchengine.services.serv.SearchService;
 import searchengine.textSpliter.LemmaFinder;
 
 import java.io.IOException;

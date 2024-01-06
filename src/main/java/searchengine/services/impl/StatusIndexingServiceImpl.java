@@ -1,4 +1,4 @@
-package searchengine.services;
+package searchengine.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,6 +8,8 @@ import searchengine.controllers.ApiController;
 import searchengine.models.PageRepository;
 import searchengine.models.SITE_INDEX;
 import searchengine.models.SiteRepository;
+import searchengine.services.serv.SiteIndexingService;
+import searchengine.services.serv.StatusIndexingService;
 
 import java.util.HashMap;
 @Service

@@ -5,7 +5,10 @@ import org.springframework.web.bind.annotation.*;
 import searchengine.config.SitesList;
 import searchengine.dto.statistics.StatisticsResponse;
 import searchengine.models.*;
-import searchengine.services.*;
+import searchengine.services.serv.IndexPageService;
+import searchengine.services.serv.SearchService;
+import searchengine.services.serv.StatisticsService;
+import searchengine.services.serv.StatusIndexingService;
 
 import java.util.HashMap;
 
@@ -15,7 +18,7 @@ import java.util.HashMap;
 public class ApiController {
     public static Boolean indexingIsGone = false;
     @Autowired
-    private  IndexPageService indexPageService;
+    private IndexPageService indexPageService;
     @Autowired
     private StatisticsService statisticsService;
     @Autowired

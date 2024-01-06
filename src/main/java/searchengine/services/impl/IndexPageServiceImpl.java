@@ -1,13 +1,14 @@
-package searchengine.services;
+package searchengine.services.impl;
 
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import searchengine.ForkJoinThreads.Fork;
 import searchengine.config.Site;
 import searchengine.config.SitesList;
 import searchengine.models.*;
+import searchengine.services.serv.IndexPageService;
+import searchengine.services.serv.LemmaFinderService;
 
 
 import java.io.IOException;
@@ -16,7 +17,7 @@ import java.util.Optional;
 
 
 @Service
-public class IndexPageServiceImpl implements IndexPageService{
+public class IndexPageServiceImpl implements IndexPageService {
 
     @Autowired
     PageRepository pageRepository;

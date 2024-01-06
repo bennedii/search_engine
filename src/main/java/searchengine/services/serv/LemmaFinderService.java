@@ -1,4 +1,4 @@
-package searchengine.services;
+package searchengine.services.serv;
 
 import org.jsoup.nodes.Document;
 import searchengine.models.*;

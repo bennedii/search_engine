@@ -1,16 +1,17 @@
-package searchengine.services;
+package searchengine.services.impl;
 import org.jsoup.nodes.Document;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.stereotype.Service;
 import searchengine.models.*;
+import searchengine.services.serv.LemmaFinderService;
 import searchengine.textSpliter.LemmaFinder;
 
 import java.io.IOException;
 import java.util.*;
 
 @Service
-public class LemmaFinderServiceImpl implements LemmaFinderService{
+public class LemmaFinderServiceImpl implements LemmaFinderService {
     @Autowired
     LemmaRepository lemmaRepository;
     @Autowired

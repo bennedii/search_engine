@@ -1,4 +1,4 @@
-package searchengine.services;
+package searchengine.services.serv;
 
 import org.springframework.stereotype.Service;
 import searchengine.models.IndexRepository;

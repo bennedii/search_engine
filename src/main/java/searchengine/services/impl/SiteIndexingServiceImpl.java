@@ -1,4 +1,4 @@
-package searchengine.services;
+package searchengine.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -6,6 +6,9 @@ import searchengine.ForkJoinThreads.Fork;
 
 import searchengine.controllers.ApiController;
 import searchengine.models.*;
+import searchengine.services.serv.LemmaFinderService;
+import searchengine.services.serv.SiteIndexingService;
+
 import java.time.LocalDateTime;
 import java.util.concurrent.ForkJoinPool;
 

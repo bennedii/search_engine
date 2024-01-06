@@ -6,7 +6,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import searchengine.controllers.ApiController;
 import searchengine.models.*;
-import searchengine.services.LemmaFinderService;
+import searchengine.services.serv.LemmaFinderService;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.util.*;
