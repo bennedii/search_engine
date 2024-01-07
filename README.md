@@ -22,6 +22,6 @@
 
 ## Автор
 
-* **Малюга Илья** - *Initial work* - [bennedii]([https://github.com/PurpleBooth](https://github.com/bennedii)
+* **Малюга Илья** - *Initial work* - [bennedii]([https://github.com/bennedii](https://github.com/bennedii)
 
 
